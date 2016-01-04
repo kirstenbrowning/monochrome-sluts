@@ -1,0 +1,208 @@
+/* 
+Project Name: Monochrome Sluts
+Author: Kirsten Browning
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+     /*border:1px solid blue;*/
+}
+
+img {
+	/*max-width:100%;*/
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+body {
+     font-family: 'Montserrat', sans-serif;
+     font-size:12px;
+     color:#000;
+}
+
+h2 {
+     text-transform:uppercase;
+     font-size:1.2rem;
+     letter-spacing: 0.4rem;
+}
+
+a {
+     text-decoration:none;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.site-header {
+/*     background-color:pink;*/
+     padding-bottom:20px;
+
+}
+.site-navigation {
+/*     background-color:pink;*/
+     padding-top:30px;
+     padding-bottom:10px;
+}
+
+.site-logo {
+/*     background-color:pink;*/
+     width:200px;
+     padding-top:30px;
+
+}
+
+.site-logo img {
+     width:200px;
+}
+
+nav li {
+     display:inline-block;
+     float:left;
+     text-transform:uppercase;
+     padding-right:20px;
+}
+
+nav li a {
+     color:#000;
+     letter-spacing:0.2rem;
+}
+
+nav li a:hover {
+     text-decoration:underline;
+}
+
+.search {
+     width:150px;
+     float:right;
+    /* background-color:green;*/
+     border-bottom:1px solid #000;
+}
+
+article img {
+-webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+article img:hover {
+-webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+
+.medium-article {
+     width:66.66%;
+/*     float:left;*/
+}
+.small-article {
+     width:33.33%;
+ /*    float:right;*/
+}
+
+article {
+     height:400px;
+     display:block;
+     position:relative;
+     float:left;
+}
+
+.title-box {
+     background-color:#fff;
+     padding:30px;
+     max-width:500px;
+     position:absolute;
+     left:0;
+     bottom:0;
+     margin:30px;
+     opacity:0.7;
+}
+
+.site-content {
+
+}
+
+.instagram {
+     display:inline-block;
+     height:300px;
+     background-color:#eee;
+     width:100%;
+     position:relative;
+     
+}
+
+.instagram a {
+     color:#000;
+     padding:15px;
+     position:absolute;
+     left:0;
+     bottom:0;
+     background-color:#fff;
+}
+
+.site-footer {
+     display:inline-block;
+     height:50px;
+/*     background-color:blue;*/
+     width:100%;
+     padding-top:30px;
+}
+
+
+.social li {
+     display:inline-block;
+/*     background-color:pink;*/
+     float:right
+}
+
+.social li a {
+     padding-right:20px;
+     height:40px;
+}
+
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
