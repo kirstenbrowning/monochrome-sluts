@@ -29,71 +29,81 @@
 					<li><a href="#">About</a></li>
 					</nav>	
 					<div class="search">Search</div>
-			</div><!-- .site-navigation -->		
+			</div><!-- .site-navigation -->
+
+			<div class="mobile-navigation">
+			</div><!-- .mobile-navigation -->
+
+			<div class="mobile-navigation">
+			</div><!-- .mobile-navigation -->
+
+			<div class="mobile-logo">
+			</div><!-- .mobile-logo -->
+
 			</header>
 
 			<!-- CONTENT -->
 			<main class="site-content">
 
-				<article class="hero-article">
-					<div class="hero-article-bg"><img src="./images/ms-heroimage-trial.jpg">
+				<article>
 					<div class="title-box">
 						<div class="title-box-text">
 							<h2>Article Title</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
-				</div><!-- .hero-article-bg -->
 				</article><!-- article -->
 
-				<article class="medium-article">
-					<div class="medium-article-bg"><img src="./images/ms-midimage-trial.jpg">
+				<article>
 						<div class="title-box">
 							<div class="title-box-text">
 								<h2>Article Title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 							</div><!-- .title-box-text -->
 						</div><!-- .title-box -->
-					</div><!-- .medium-article-bg -->
 				</article><!-- article -->	
 
-				<article class="small-article">
-					<div class="small-article-bg"><img src="./images/ms-smallimage-trial.jpg">
+				<article>
 						<div class="title-box">
 							<div class="title-box-text">
 								<h2>Article Title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 							</div><!-- .title-box-text -->
 						</div><!-- .title-box -->
-				</div><!-- .small-article-bg -->
 				</article><!-- article -->
 
-				<article class="small-article">
-					<div class="small-article-bg"><img src="./images/ms-smallimage-trial.jpg">
+				<article>
 						<div class="title-box">
 							<div class="title-box-text">
 								<h2>Article Title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 							</div><!-- .title-box-text -->
 						</div><!-- .title-box -->
-				</div><!-- .small-article-bg -->
 				</article><!-- article -->	
 
-				<article class="medium-article">
-					<div class="medium-article-bg"><img src="./images/ms-midimage-trial.jpg">
+				<article>
 						<div class="title-box">
 							<div class="title-box-text">
 								<h2>Article Title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 							</div><!-- .title-box-text -->
 						</div><!-- .title-box -->
-					</div><!-- .medium-article-bg -->
-				</article><!-- article -->		
+				</article><!-- article -->
+
+				<article>
+						<div class="title-box">
+							<div class="title-box-text">
+								<h2>Article Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
+							</div><!-- .title-box-text -->
+						</div><!-- .title-box -->
+				</article><!-- article -->			
 	
 			</main><!-- .site-content -->
 
 			<div class="instagram">
-				<a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a>
+				<div id="instafeed"></div>
+				<!-- <a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a> -->
 			</div>
 
 			<!-- FOOTER-->
@@ -110,7 +120,15 @@
 			</footer>
 
 		</div><!-- .site-container -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/main.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js">
+		var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'travel',
+        clientId: '0b4189e826b84e71b67459fdfc0dcd78'
+    });
+    feed.run();
+    </script>
 	</body>
 </html>

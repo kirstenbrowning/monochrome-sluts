@@ -15,11 +15,11 @@ Author: Kirsten Browning
 
 * {
      box-sizing: border-box;
-     /*border:1px solid blue;*/
+     border:1px solid blue;
 }
 
 img {
-	/*max-width:100%;*/
+	max-width:100%;
 }
 
 /******************************************
@@ -47,23 +47,29 @@ a {
 /*******************************************/
 
 .site-container {
-	max-width: 1200px;
+     max-width:1024px;
 	margin: 0 auto;
 }
 
 .site-header {
-/*     background-color:pink;*/
+     /*background-color:pink;*/
      padding-bottom:20px;
 
 }
 .site-navigation {
-/*     background-color:pink;*/
+     /*background-color:pink;*/
      padding-top:30px;
      padding-bottom:10px;
 }
 
+@media screen and (max-width:800px) {
+     nav li a, .search {
+          display:none;
+     }
+}
+
 .site-logo {
-/*     background-color:pink;*/
+     /*background-color:pink;*/
      width:200px;
      padding-top:30px;
 
@@ -90,51 +96,94 @@ nav li a:hover {
 }
 
 .search {
-     width:150px;
+     width:180px;
      float:right;
-    /* background-color:green;*/
+     background-color:green;
      border-bottom:1px solid #000;
 }
 
-article img {
+.mobile-navigation {
+     width:50px;
+     height:50px;
+     background-color:green;
+     display:none;
+}
+
+.mobile-search {
+     width:50px;
+     height:50px;
+     background-color:green;
+     display:none;
+}
+
+@media screen and (max-width:800px) {
+     .mobile-navigation {
+          display:inline-block
+     }
+}
+
+.mobile-logo {
+     width:70%;
+     height:50px;
+     background-color:blue;
+     display:none;
+}
+
+@media screen and (max-width:800px) {
+     .mobile-logo {
+          display:inline-block
+     }
+}
+
+
+
+/*article img {
 -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
+
 article img:hover {
 -webkit-filter: grayscale(0);
   filter: grayscale(0);
-}
+}*/
 
-
-.medium-article {
-     width:66.66%;
-/*     float:left;*/
-}
-.small-article {
-     width:33.33%;
- /*    float:right;*/
-}
 
 article {
+     width:100%;
+     min-width:350px;
      height:400px;
      display:block;
      position:relative;
      float:left;
+     background-color:black;
+     background-image:url(../images/ms-heroimage-trial.jpg);
+}
+
+@media screen and (max-width:1024px) {
+     article {
+          width:50%;
+     }
+}
+
+@media screen and (max-width:800px) {
+     article {
+          width:100%;
+     }
 }
 
 .title-box {
      background-color:#fff;
      padding:30px;
      max-width:500px;
-     position:absolute;
+/*     position:absolute;*/
      left:0;
      bottom:0;
      margin:30px;
-     opacity:0.7;
 }
 
 .site-content {
+     height:100%;
 
 }
 
@@ -156,10 +205,16 @@ article {
      background-color:#fff;
 }
 
+#instafeed {
+     height:300px;
+     width:100%;
+
+}
+
 .site-footer {
      display:inline-block;
-     height:50px;
-/*     background-color:blue;*/
+     height:70px;
+     background-color:blue;
      width:100%;
      padding-top:30px;
 }
@@ -167,12 +222,12 @@ article {
 
 .social li {
      display:inline-block;
-/*     background-color:pink;*/
+     /*background-color:pink;*/
      float:right
 }
 
 .social li a {
-     padding-right:20px;
+     padding-right:10px;
      height:40px;
 }
 
