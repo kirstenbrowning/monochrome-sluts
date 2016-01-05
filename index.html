@@ -54,13 +54,20 @@
 					</div><!-- .title-box -->
 				</article><!-- article -->
 
-				<article>
+				<article>	
+
 						<div class="title-box">
 							<div class="title-box-text">
 								<h2>Article Title</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
 							</div><!-- .title-box-text -->
 						</div><!-- .title-box -->
+						<picture>
+  <source srcset="./images/ms-heroimage-trial-desktop.jpg" media="(min-width: 801px)">
+  <source srcset="./images/ms-heroimage-trial-tablet.jpg" media="(max-width: 800px)">
+  	<source srcset="./images/ms-heroimage-trial-mobile.jpg" media="(max-width: 500px)">
+  <img srcset="./images/ms-heroimage-trial-desktop.jpg" alt="…">
+</picture>
 				</article><!-- article -->	
 
 				<article>
@@ -103,7 +110,7 @@
 
 			<div class="instagram">
 				<div id="instafeed"></div>
-				<!-- <a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a> -->
+				<a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a>
 			</div>
 
 			<!-- FOOTER-->
@@ -120,15 +127,23 @@
 			</footer>
 
 		</div><!-- .site-container -->
+	
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/instafeed.min.js">
-		var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'travel',
-        clientId: '0b4189e826b84e71b67459fdfc0dcd78'
-    });
-    feed.run();
-    </script>
+
+	<script src="./js/picturefill.min.js"></script>
+
+	<!-- Instafeed -->
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'awesome',
+	        clientId: '877c13677a614436ad3d65856a9f4c8c',
+	    });
+	    feed.run();
+	</script>
+
 	</body>
 </html>
