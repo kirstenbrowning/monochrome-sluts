@@ -151,25 +151,17 @@ article img:hover {
 
 article {
      width:100%;
-     min-width:400px;
+     min-width:350px;
      height:400px;
      display:block;
      position:relative;
      float:left;
-     /*background-image:url(../images/ms-heroimage-trial-desktop.jpg);*/
+     background:
+     url(../images/ms-heroimage-trial-desktop-2.jpg)
+     no-repeat
+     center;
 }
 
-@media screen and (max-width:1200px) {
-     article {
-          width:100%;
-     }
-}
-
-@media screen and (max-width:800px) {
-     article {
-          width:100%;
-     }
-}
 
 .title-box {
      background-color:#fff;
@@ -179,6 +171,7 @@ article {
      left:0;
      bottom:0;
      margin:30px;
+     opacity:0.8;
 }
 
 .site-content {
