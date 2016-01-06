@@ -15,7 +15,7 @@ Author: Kirsten Browning
 
 * {
      box-sizing: border-box;
-     border:1px solid blue;
+   /*  border:1px solid blue;*/
 }
 
 img {
@@ -61,7 +61,11 @@ a {
 .site-nav {
      float:left;
 }
-@media screen and (max-width:675px) {
+
+ul {
+         -webkit-padding-start: 0;
+}
+@media screen and (max-width:800px) {
      .site-nav {
           float:left;
      }
@@ -69,7 +73,7 @@ a {
           padding:0;
      }
 }
-@media screen and (max-width:640px) {
+@media screen and (max-width:800px) {
      .site-nav ul {
           display:none;
      }
@@ -79,12 +83,10 @@ a {
 }
 .site-nav li {
      display:inline-block;
-     margin-right:0.5em;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
      .site-nav li {
           display:block;
-          margin:0.25em 0;
      }
 }
 .site-nav a {
