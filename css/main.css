@@ -47,7 +47,7 @@ a {
 /*******************************************/
 
 .site-container {
-     max-width:1024px;
+     max-width:1200px;
 	margin: 0 auto;
 }
 
@@ -156,30 +156,22 @@ article {
      display:block;
      position:relative;
      float:left;
-     background-color:black;
-     background-image:url(../images/ms-heroimage-trial.jpg);
+     background:
+     url(../images/ms-heroimage-trial-desktop-2.jpg)
+     no-repeat
+     center;
 }
 
-@media screen and (max-width:1024px) {
-     article {
-          width:50%;
-     }
-}
-
-@media screen and (max-width:800px) {
-     article {
-          width:100%;
-     }
-}
 
 .title-box {
      background-color:#fff;
      padding:30px;
      max-width:500px;
-/*     position:absolute;*/
+     position:absolute;
      left:0;
      bottom:0;
      margin:30px;
+     opacity:0.8;
 }
 
 .site-content {
@@ -206,8 +198,6 @@ article {
 }
 
 #instafeed {
-     height:300px;
-     width:100%;
 
 }
 
