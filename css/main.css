@@ -1,4 +1,4 @@
-/* 
+     /* 
 Project Name: Monochrome Sluts
 Author: Kirsten Browning
 */
@@ -49,6 +49,7 @@ a {
 .site-container {
      max-width:1200px;
 	margin: 0 auto;
+
 }
 
 .site-header {
@@ -62,16 +63,9 @@ a {
      padding-bottom:10px;
 }
 
-@media screen and (max-width:800px) {
-     nav li a, .search {
-          display:none;
-     }
-}
-
 .site-logo {
      /*background-color:pink;*/
      width:200px;
-     padding-top:30px;
 
 }
 
@@ -79,7 +73,13 @@ a {
      width:200px;
 }
 
-nav li {
+@media screen and (max-width:800px) {
+     .site-logo, .site-navigation {
+          display:none;
+     }
+}
+
+.desktop-nav li {
      display:inline-block;
      float:left;
      text-transform:uppercase;
@@ -91,7 +91,7 @@ nav li a {
      letter-spacing:0.2rem;
 }
 
-nav li a:hover {
+.desktop-nav nav li a:hover {
      text-decoration:underline;
 }
 
@@ -102,39 +102,39 @@ nav li a:hover {
      border-bottom:1px solid #000;
 }
 
-.mobile-navigation {
-     width:50px;
-     height:50px;
-     background-color:green;
+.mobile-burger {
      display:none;
+     height:50px;
+     width:50px;
 }
 
 .mobile-search {
-     width:50px;
-     height:50px;
-     background-color:green;
      display:none;
-}
-
-@media screen and (max-width:800px) {
-     .mobile-navigation {
-          display:inline-block
-     }
 }
 
 .mobile-logo {
-     width:70%;
-     height:50px;
-     background-color:blue;
      display:none;
 }
 
+.mobile-logo img {
+     height:60px;
+}
+
 @media screen and (max-width:800px) {
-     .mobile-logo {
-          display:inline-block
+     .mobile-logo, .mobile-search, .mobile-burger {
+          display:inline-block;
      }
 }
 
+.mobile-expand {
+     padding:20px;
+     background-color:pink;
+     display:none;
+}
+
+.mobile-expand li {
+     display:block;
+}
 
 
 /*article img {

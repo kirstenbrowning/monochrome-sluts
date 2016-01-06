@@ -19,8 +19,8 @@
 			<header class="site-header">
 				<div class="site-logo"><img src="./images/monochromesluts-logo.svg"></div>
 				<div class="site-navigation">
-					<!-- NAV -->
-					<nav>
+					<!-- DESKTOP-NAV -->
+					<nav class="desktop-nav">
 					<li><a href="#">Style</a></li>
 					<li><a href="#">Edits</a></li>
 					<li><a href="#">Grooming</a></li>
@@ -32,13 +32,24 @@
 			</div><!-- .site-navigation -->
 
 			<div class="mobile-navigation">
-			</div><!-- .mobile-navigation -->
-
-			<div class="mobile-navigation">
-			</div><!-- .mobile-navigation -->
-
-			<div class="mobile-logo">
-			</div><!-- .mobile-logo -->
+				<div class="mobile-burger"><a href="#"></a>
+					<i class="fa fa-bars fa-3x"></i>
+				</div><!-- .mobile-burger -->
+				<div class="mobile-search">
+					<i class="fa fa-search fa-3x"></i>
+				</div><!-- .mobile-search-->
+				<div class="mobile-logo"><img src="./images/monochromesluts-logo-nobox-mobile.svg">
+				</div><!-- .mobile-logo -->
+				<!-- MOBILE-NAV -->
+					<nav class="mobile-expand">
+					<li><a href="#">Style</a></li>
+					<li><a href="#">Edits</a></li>
+					<li><a href="#">Grooming</a></li>
+					<li><a href="#">Monotones</a></li>
+					<li><a href="#">Travel</a></li>
+					<li><a href="#">About</a></li>
+					</nav>	
+			</div><!-- .mobile-navigation	 -->
 
 			</header>
 
@@ -124,12 +135,9 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/main.js"></script>
 
-	<script src="./js/picturefill.min.js"></script>
-
-	<!-- Instafeed -->
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 	    var feed = new Instafeed({
 	        get: 'tagged',
 	        tagName: 'monochromesluts',
