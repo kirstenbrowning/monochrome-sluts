@@ -21,13 +21,14 @@
 				<div class="mobile-logo"><img src="./images/monochromesluts-logo-nobox-mobile.svg"></div>
 				<nav class="site-nav">
 					<ul>
-						<li><a href="#" class="featured-link">Find developers</a></li>
-						<li><a href="#" class="featured-link">Find designers</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Our Team</a></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="#" class="featured-link">Style</a></li>
+						<li><a href="#" class="featured-link">Edits</a></li>
+						<li><a href="#">Grooming</a></li>
+						<li><a href="#">Monotones</a></li>
+						<li><a href="#">Travel</a></li>
+						<li><a href="#">About</a></li>
 					</ul>
-					<a class="nav-icon" href="#"></a>
+					<a class="nav-icon" href="#"><i class="fa fa-bars fa-2x"></i></a>
 				</nav>
 
 			</header>
@@ -39,62 +40,51 @@
 					<div class="title-box">
 						<div class="title-box-text">
 							<h2>Article Title</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<a id="read-more" href="#">Read More</a>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
 				</article><!-- article -->
 
-				<article>	
-						<div class="title-box">
-							<div class="title-box-text">
-								<h2>Article Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
-							</div><!-- .title-box-text -->
-						</div><!-- .title-box -->
-				</article><!-- article -->	
-
 				<article>
-						<div class="title-box">
-							<div class="title-box-text">
-								<h2>Article Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
-							</div><!-- .title-box-text -->
-						</div><!-- .title-box -->
+					<div class="title-box">
+						<div class="title-box-text">
+							<h2>Article Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<a id="read-more" href="#">Read More</a>
+						</div><!-- .title-box-text -->	
+					</div><!-- .title-box -->
 				</article><!-- article -->
 
 				<article>
-						<div class="title-box">
-							<div class="title-box-text">
-								<h2>Article Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
-							</div><!-- .title-box-text -->
-						</div><!-- .title-box -->
-				</article><!-- article -->	
-
-				<article>
-						<div class="title-box">
-							<div class="title-box-text">
-								<h2>Article Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
-							</div><!-- .title-box-text -->
-						</div><!-- .title-box -->
+					<div class="title-box">
+						<div class="title-box-text">
+							<h2>Article Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<a id="read-more" href="#">Read More</a>
+						</div><!-- .title-box-text -->	
+					</div><!-- .title-box -->
 				</article><!-- article -->
 
 				<article>
-						<div class="title-box">
-							<div class="title-box-text">
-								<h2>Article Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. </p>
-							</div><!-- .title-box-text -->
-						</div><!-- .title-box -->
-				</article><!-- article -->			
-	
+					<div class="title-box">
+						<div class="title-box-text">
+							<h2>Article Title</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<a id="read-more" href="#">Read More</a>
+						</div><!-- .title-box-text -->	
+					</div><!-- .title-box -->
+				</article><!-- article -->				
+
 			</main><!-- .site-content -->
+<!-- 
+			<div class="instagram"> -->
+				<div id="instafeed">
+					<div class="insta-link"><a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a>
+					</div>
+					</div>
 
-			<div class="instagram">
-				<div id="instafeed"></div>
-				<a href="https://www.instagram.com/mariellaagapiou/">@mariellaagapiou</a>
-			</div>
+<!-- 			</div> -->
 
 			<!-- FOOTER-->
 			<footer class="site-footer">
@@ -121,7 +111,9 @@
 	    var feed = new Instafeed({
 	        get: 'tagged',
 	        tagName: 'monochromesluts',
+	        resolution: 'thumbnail',
 	        clientId: '877c13677a614436ad3d65856a9f4c8c',
+	        limit: '8',
 	    });
 	    feed.run();
 	</script>
