@@ -17,7 +17,7 @@ Author: Kirsten Browning
 
 * {
      box-sizing: border-box;
-   /*  border:1px solid blue;*/
+/*     border:1px solid blue;*/
 }
 
 img {
@@ -63,6 +63,8 @@ a {
 
 .site-nav {
      float:left;
+     margin-top:20px;
+     margin-bottom:10px;
 }
 
 ul {
@@ -74,6 +76,7 @@ ul {
      }
      .site-nav ul {
           padding:0;
+          line-height:2em;
      }
 }
 @media screen and (max-width:800px) {
@@ -105,32 +108,28 @@ ul {
      text-transform:uppercase;
      text-decoration:none;
 }
-.nav-icon,
-.nav-icon:before,
-.nav-icon:after {
-     content:"";
+.nav-icon {
      position:absolute;
-     left:0px;
-     width:2em;
-     height:2em;
-     border-top:0.25em solid #000;
+     width:40px;
+     height:40px;
+     /*border-top:0.25em solid #000;*/
+     top:20px
 }
 .nav-icon {
      display:none;
-     top:0.75em;
-     margin-top: 1em;
+     left:20px;
 }
 @media screen and (max-width: 800px) {
      .nav-icon { display:block; }
 }
-.nav-icon:before {
-     top:0.25em;
+/*.nav-icon:before {
+     top:0.15em;
      right:0;
 }
 .nav-icon:after {
      top:0.75em;
      right:0;
-}
+}*/
 
 
 .site-logo img {
@@ -146,7 +145,7 @@ ul {
 
 .mobile-logo {
      display:none;
-     height:60px;
+     margin-left:40px;
 }
 
 .mobile-logo img {
@@ -155,6 +154,8 @@ ul {
 
 @media screen and (max-width: 800px) {
      .mobile-logo img { display:inline-block; }
+     .site-container {margin-top:0px;}
+     .site-header {margin:0; padding:0;}
 }
 
 
