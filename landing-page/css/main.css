@@ -28,14 +28,13 @@ img {
 /*******************************************/
 
 body {
-     font-family: 'Montserrat', sans-serif;
+     font-family: Helvetica, sans-serif;
      font-weight:400;
      font-size:14px;
 } 
 
 h1 {
      color:#000;
-     font-weight:700;
      font-size:1.1rem;
      letter-spacing:0.3rem;
      text-transform: uppercase;
@@ -44,8 +43,8 @@ h1 {
 h2 {
      font-size:0.9rem;
      letter-spacing:0;
-     font-weight:400;
-     letter-spacing:0.1rem;
+     font-weight:normal;
+     letter-spacing:0.09rem;  
      padding-bottom:8px;
 }
 
@@ -111,6 +110,8 @@ h2 {
 .button {
      background:#000;
      color:#fff;
+     font-weight:bold;
+     letter-spacing:0.05rem;
      font-size:0.8rem;
      border:none;
      text-transform:uppercase;
@@ -124,8 +125,7 @@ h2 {
 }
 
 #mc_embed_signup {
-/*     border-top:1px solid #000;*/
-     max-width:280px;
+     max-width:300px;
      margin:auto;
      padding-top:10px;
      margin-top:30px;
