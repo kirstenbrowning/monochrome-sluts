@@ -44,12 +44,13 @@ h2 {
      font-size:0.9rem;
      letter-spacing:0;
      font-weight:normal;
-     letter-spacing:0.09rem;  
+     letter-spacing:0.08rem;  
      padding-bottom:8px;
 }
 
 .mc-field-group {
      font-size:0.8rem;
+     letter-spacing:0.08rem; 
 }
 /******************************************
 /* LAYOUT                   
@@ -122,13 +123,16 @@ h2 {
 #mce-EMAIL {
      height:30px;
      padding-left:5px;
+     width:200px;
+     letter-spacing:0.08rem; 
 }
 
 #mc_embed_signup {
      max-width:300px;
      margin:auto;
      padding-top:10px;
-     margin-top:30px;
+     margin-top:40px;
+     border-top:1px solid #ccc;
 }
 
 
