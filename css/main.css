@@ -222,13 +222,22 @@ article:hover {
 }*/
 
 .insta-link {
-     color:#000;
-     padding:15px;
      position:absolute;
      left:0;
      bottom:0;
+}
+
+.insta-link a {
+     color:#000;
+     text-decoration:none;
+     padding:15px;
      background-color:#fff;
      opacity:0.8;
+}
+
+.insta-link a:hover {
+     color:#fff;
+     background-color:#000;
 }
 
 #instafeed {
