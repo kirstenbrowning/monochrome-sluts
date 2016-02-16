@@ -40,6 +40,11 @@ h2 {
      letter-spacing: 0.4em;
 }
 
+h3 {
+     font-size:1em;
+     font-weight: 400;
+}
+
 a {
      text-decoration:none;
      text-transform:uppercase;
@@ -54,7 +59,6 @@ a:visited {
 a:hover {
      text-decoration: underline;
 }
-
 /******************************************
 /* LAYOUT                   
 /*******************************************/
@@ -66,6 +70,9 @@ a:hover {
 
 .site-header {
      padding-bottom:50px;
+/*     height:100px;
+     width:100%;
+     background:pink;*/
 
 }
 
@@ -153,12 +160,11 @@ ul {
 article {
      width:100%;
      min-width:310px;
-     height:400px;
+     min-height:400px;
      display:block;
      position:relative;
      float:left;
      background:
-     url(../images/ms-heroimage-trial-desktop-2.jpg)
      no-repeat
      center;
      -webkit-filter: grayscale(1);
@@ -171,7 +177,7 @@ article:hover {
   filter: grayscale(0);
 }
 
-.title-box {
+/*.title-box {
      background-color:#fff;
      padding:30px;
      max-width:450px;
@@ -180,7 +186,7 @@ article:hover {
      bottom:0;
      margin:30px;
      opacity:0.7;
-}
+}*/
 
 .title-box-text p {
      padding-bottom:10px;
@@ -252,6 +258,10 @@ article:hover {
 .social li a {
      padding-right:10px;
      height:40px;
+}
+
+img {
+     display:block;
 }
 
 
