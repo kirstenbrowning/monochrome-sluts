@@ -164,6 +164,17 @@ article {
      display:block;
      position:relative;
      float:left;
+/*     background:
+     no-repeat
+     center;
+     -webkit-filter: grayscale(1);
+     filter: grayscale(1);*/
+}
+
+.feature-post img {
+/*     display:block;
+     position:relative;*/
+     float:left;
      background:
      no-repeat
      center;
@@ -177,7 +188,7 @@ article:hover {
   filter: grayscale(0);
 }
 
-/*.title-box {
+.title-box {
      background-color:#fff;
      padding:30px;
      max-width:450px;
@@ -186,7 +197,7 @@ article:hover {
      bottom:0;
      margin:30px;
      opacity:0.7;
-}*/
+}
 
 .title-box-text p {
      padding-bottom:10px;
