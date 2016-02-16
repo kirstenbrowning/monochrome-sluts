@@ -157,35 +157,25 @@ ul {
 }
 
 
-article {
-     width:100%;
-     min-width:310px;
-     min-height:400px;
+.feature-post {
+/*     width:100%;*/
      display:block;
      position:relative;
      float:left;
 /*     background:
      no-repeat
-     center;
-     -webkit-filter: grayscale(1);
-     filter: grayscale(1);*/
-}
-
-.feature-post img {
-/*     display:block;
-     position:relative;*/
-     float:left;
-     background:
-     no-repeat
-     center;
+     center;*/
      -webkit-filter: grayscale(1);
      filter: grayscale(1);
 }
 
+.feature-post img {
+     min-width:310px;
+     min-height:400px;
+     background:
+     no-repeat
+     center;
 
-article:hover {
--webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }
 
 .title-box {
