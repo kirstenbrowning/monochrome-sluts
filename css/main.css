@@ -70,9 +70,9 @@ a:hover {
 
 .site-header {
      padding-bottom:50px;
-/*     height:100px;
+     height:200px;
      width:100%;
-     background:pink;*/
+     background:pink;
 
 }
 
@@ -157,61 +157,9 @@ ul {
 }
 
 
-.feature-post {
+article {
 /*     width:100%;*/
-     display:block;
-     position:relative;
-     float:left;
-/*     background:
-     no-repeat
-     center;*/
-     -webkit-filter: grayscale(1);
-     filter: grayscale(1);
-}
-
-.feature-post img {
-     min-width:310px;
-     min-height:400px;
-     background:
-     no-repeat
-     center;
-
-}
-
-.title-box {
-     background-color:#fff;
-     padding:30px;
-     max-width:450px;
-     position:absolute;
-     left:0;
-     bottom:0;
-     margin:30px;
-     opacity:0.7;
-}
-
-.title-box-text p {
-     padding-bottom:10px;
-}
-
-
-.title-box-text a {
-     color:#000;
-     letter-spacing:0.3em;
-     border:2px solid #000;
-     padding:10px;
-     text-transform:uppercase;
-     float:right;
-}
-
-.title-box-text a:hover {
-     color:#fff;
-     background-color:#000;
-
-}
-
-.site-content {
-     height:100%;
-
+     background:pink;
 }
 
 .article-nav {
@@ -261,11 +209,19 @@ ul {
      height:40px;
 }
 
-img {
+/*img {
      display:block;
 }
+*/
 
-
+.thumbnail {
+     height:300px;
+     width:100%;
+     background:
+     url(../images/ms-heroimage-trial-desktop-2.jpg)
+     no-repeat
+     center;
+}
 /******************************************
 /* HELPER CLASSES
 /*******************************************/
