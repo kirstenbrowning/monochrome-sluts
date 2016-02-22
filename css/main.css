@@ -32,17 +32,36 @@ body {
      font-family: 'Montserrat', sans-serif;
      font-size:12px;
      color:#000;
+     font-weight:400;
+     line-height:1.6em;
+     letter-spacing:0.05em;
 }
 
 h2 {
      text-transform:uppercase;
      font-size:1.5em;
      letter-spacing: 0.4em;
+     line-height:1.7em;
+}
+
+h3 {
+     text-transform:uppercase;
+     font-size:1.2em;
+     letter-spacing: 0.4em;
 }
 
 a {
      text-decoration:none;
+     color:#000;
 }
+
+p {
+     font-family: 'Helvetica', sans-serif;
+}
+
+p a {
+     text-decoration:underline;
+ }
 
 /******************************************
 /* LAYOUT                   
@@ -53,19 +72,55 @@ a {
 	margin: 30px auto;
      padding-left:20px;
      padding-right:20px;
-
 }
 
 .site-header {
-     padding-bottom:50px;
-
 }
 
 .site-nav {
      float:left;
-     margin-top:20px;
-     margin-bottom:10px;
+     margin-top:10px;
+     margin-bottom:20px;
+     width:100%;
+/*     border-bottom:1px solid black;*/
+    /* border:blue 1px solid;*/
 }
+
+.search {
+     display:inline;
+     float:right;
+     /*border:blue 1px solid;*/
+}
+
+@media screen and (max-width: 800px) {
+     .search { display:none; }
+}
+
+.search form {
+     padding-top:10px;
+     font-size:1em;
+}
+
+.search-field {
+     border:none;
+     border-bottom:1px solid black;
+     text-transform:uppercase;
+     width:120px;
+}
+
+input .search-field {
+     color:#000;
+}
+
+.search-button {
+     color:#fff;
+     background:#000;
+     padding-left:10px;
+     padding-right:10px;
+     border:none;
+     text-transform:uppercase;
+}
+
 
 ul {
      -webkit-padding-start: 0;
@@ -97,6 +152,11 @@ ul {
      text-decoration:underline;
 }
 
+.site-nav li a.active {
+     text-decoration:underline;
+ }
+
+
 @media screen and (max-width: 800px) {
      .site-nav li {
           display:block;
@@ -112,7 +172,6 @@ ul {
      position:absolute;
      width:40px;
      height:40px;
-     /*border-top:0.25em solid #000;*/
      top:20px
 }
 .nav-icon {
@@ -122,15 +181,6 @@ ul {
 @media screen and (max-width: 800px) {
      .nav-icon { display:block; }
 }
-/*.nav-icon:before {
-     top:0.15em;
-     right:0;
-}
-.nav-icon:after {
-     top:0.75em;
-     right:0;
-}*/
-
 
 .site-logo img {
      width:200px;
@@ -140,7 +190,6 @@ ul {
 @media screen and (max-width: 800px) {
      .site-logo img { display:none; }
 }
-
 
 
 .mobile-logo {
@@ -159,7 +208,7 @@ ul {
 }
 
 
-article {
+.thumbnail {
      width:100%;
      min-width:310px;
      height:400px;
@@ -175,7 +224,7 @@ article {
 }
 
 
-article:hover {
+.thumbnail:hover {
 -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
@@ -197,15 +246,18 @@ article:hover {
 
 
 .title-box-text a {
+     float:right;
+}
+
+#read-more {
      color:#000;
      letter-spacing:0.3em;
      border:2px solid #000;
      padding:10px;
      text-transform:uppercase;
-     float:right;
 }
 
-.title-box-text a:hover {
+#read-more:hover {
      color:#fff;
      background-color:#000;
 
@@ -216,11 +268,12 @@ article:hover {
 
 }
 
-/*.instagram {
-     position:relative;
-     
-}*/
+article img {
+     padding-top:20px;
+     margin:0 auto;
+}
 
+<<<<<<< HEAD
 .insta-link {
      position:absolute;
      left:0;
@@ -232,7 +285,22 @@ article:hover {
      text-decoration:none;
      padding:15px;
      background-color:#fff;
+=======
+
+.insta-link a {
+     position:absolute;
+>>>>>>> master
      opacity:0.8;
+     color:#000;
+     padding:10px;
+     left:0;
+     bottom:5px;
+     background:#fff;
+}
+
+.insta-link a:hover {
+     background:#000;
+     color:#fff;
 }
 
 .insta-link a:hover {
@@ -244,25 +312,74 @@ article:hover {
      display:inline-block;
      width:100%;
      position:relative;
+     padding:0px;
 }
+
+#instafeed img {
+     width:12.5%;
+     height:12.5%;
+}
+
+@media screen and (max-width: 800px) {
+     #instafeed img { 
+         width:25%;
+         height:25%; 
+     }
+}
+@media screen and (max-width: 400px) {
+     #instafeed img { 
+         width:50%;
+         height:50%; 
+     }
+}
+
 
 .site-footer {
      display:inline-block;
-     height:70px;
      width:100%;
      padding-top:30px;
 }
 
+.article-nav {
+     padding:top:30px;
+     border-top:1px solid black;
+     height:80px;
+}
+
+.article-nav a {
+     font-size:0.9em;
+     letter-spacing:0.2em;
+     padding-top:30px;
+     text-transform: uppercase;
+     color:#000;
+}
+
+.article-nav a:hover {
+     text-decoration:underline;
+}
+
+#previous {
+     float:left;
+}
+
+#next {
+     float:right;
+}
+
+
 
 .social li {
      display:inline-block;
-     /*background-color:pink;*/
      float:right
 }
 
 .social li a {
-     padding-right:10px;
+     padding-right:12px;
      height:40px;
+}
+
+.social {
+     margin-top:30px;
 }
 
 
