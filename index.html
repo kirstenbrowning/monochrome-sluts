@@ -49,7 +49,7 @@
 						<div class="title-box-text">
 							<h2>Article Title</h2>
 							<h3>01/01/16</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet...</p>
 							<a id="read-more" href="single.html">Read More</a>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
@@ -62,7 +62,7 @@
 						<div class="title-box-text">
 							<h2>Article Title</h2>
 							<h3>01/01/16</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet...</p>
 							<a id="read-more" href="single.html">Read More</a>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
@@ -75,7 +75,7 @@
 						<div class="title-box-text">
 							<h2>Article Title</h2>
 							<h3>01/01/16</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet...</p>
 							<a id="read-more" href="single.html">Read More</a>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
@@ -88,7 +88,7 @@
 						<div class="title-box-text">
 							<h2>Article Title</h2>
 							<h3>01/01/16</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed does.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet...</p>
 							<a id="read-more" href="single.html">Read More</a>
 						</div><!-- .title-box-text -->	
 					</div><!-- .title-box -->
@@ -125,15 +125,18 @@
 
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
-		<script type="text/javascript">
+	<script type="text/javascript">
 	    var feed = new Instafeed({
 	        get: 'user',
 	        userId: '21785746',
 	        accessToken: '12173487.1677ed0.8112b74a7f064898b66a15fcf2562e4d',
-	        resolution: 'thumbnail',
+	        // resolution: 'standard_resolution',
 	        limit: '8',
-	    });
-	    feed.run();
+	        after: function() {
+      		$("#instafeed a").attr("target","_blank");
+      		}
+		});
+		feed.run();
 	</script>
 
 	</body>

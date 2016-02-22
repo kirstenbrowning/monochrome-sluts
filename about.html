@@ -83,15 +83,18 @@
 
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
-		<script type="text/javascript">
+	<script type="text/javascript">
 	    var feed = new Instafeed({
 	        get: 'user',
 	        userId: '21785746',
 	        accessToken: '12173487.1677ed0.8112b74a7f064898b66a15fcf2562e4d',
-	        resolution: 'thumbnail',
+	        // resolution: 'standard_resolution',
 	        limit: '8',
-	    });
-	    feed.run();
+	        after: function() {
+      		$("#instafeed a").attr("target","_blank");
+      		}
+		});
+		feed.run();
 	</script>
 
 	</body>
